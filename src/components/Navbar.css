@@ -1,0 +1,51 @@
+nav{
+      display: flex;
+      align-items: center;
+      height: 100px;
+      padding-left: 10px;
+      background-color: black;
+    }
+    
+    /* .colormode{
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: none;
+    } */
+    
+    nav>h3{
+      margin-right: auto;
+      font-weight: 700;
+      color: #61dbfb;
+      font-size: 30px;
+    }
+    
+    nav>a,label{
+      margin-right: 15px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    
+    @keyframes logorotate {
+      from{transform: rotate(0);}
+      to{transform: rotate(360deg);}
+    }
+    
+    nav>.logo{
+      height: 50%;
+      margin-right: 10px;
+      animation-name: logorotate;
+      animation-timing-function: linear;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+    }
+    
+    nav>.logo:hover{
+      animation-play-state: paused;
+    }
+    
+    nav>.navfields,label{
+      color: #61dbfb;
+      font-size: 20px;
+    }
